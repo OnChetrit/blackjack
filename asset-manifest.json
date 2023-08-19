@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/blackjack/static/css/main.2fab1877.css",
+    "main.js": "/blackjack/static/js/main.d84da5d8.js",
+    "static/media/texture.jpg": "/blackjack/static/media/texture.365f7a762f660d6c5512.jpg",
+    "static/media/background-card.png": "/blackjack/static/media/background-card.0181c5a5476e12351be4.png",
+    "static/media/blackjack2.png": "/blackjack/static/media/blackjack2.2630edb5e7b6535a7013.png",
+    "static/media/cards.svg": "/blackjack/static/media/cards.8e7a3c9327486374b6868d2e6d89d398.svg",
+    "static/media/ribbon.svg": "/blackjack/static/media/ribbon.2cbd78f1a94b207f387b5c1fb6d9bc00.svg",
+    "index.html": "/blackjack/index.html",
+    "main.2fab1877.css.map": "/blackjack/static/css/main.2fab1877.css.map",
+    "main.d84da5d8.js.map": "/blackjack/static/js/main.d84da5d8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2fab1877.css",
+    "static/js/main.d84da5d8.js"
+  ]
+}
