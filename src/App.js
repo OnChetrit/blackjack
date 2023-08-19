@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import { useSelector } from "react-redux";
+import { GameArea } from "./js/components/GameArea";
+import "./assets/style/Base.scss";
+import { Welcome } from "./js/components/Welcome";
+import { Modal } from "./js/components/Modal";
 
-function App() {
+const App = () => {
+  const gameInfo = useSelector(state => state.gameInfo)
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {gameInfo.isGameOn ?
+        <GameArea /> : <Welcome />
+      }
+      {gameInfo.roundStatus && <Modal roundStatus={gameInfo.roundStatus} />}
+    </>
   );
 }
 

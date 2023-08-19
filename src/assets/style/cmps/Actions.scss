@@ -1,0 +1,14 @@
+.actions {
+  display: flex;
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  gap: 10px;
+  align-items: center;
+  width: 100%;
+
+  .left,
+  .right {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+  }
+}

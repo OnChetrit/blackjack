@@ -1,0 +1,35 @@
+.bank {
+  position: fixed;
+  left: 10px;
+  bottom: 0;
+  width: 90vw;
+  max-width: 500px;
+  background-color: #11364f;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px 2px #000;
+  transition: bottom 0.5s ease-in-out;
+
+  &.hide {
+    bottom: -70px;
+  }
+
+  .total {
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px 2px #000;
+    background-color: #11364f;
+    position: absolute;
+    width: 200px;
+    top: -50px;
+    left: 0;
+    font-weight: bold;
+  }
+
+  .chip-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}

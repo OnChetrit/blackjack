@@ -1,0 +1,56 @@
+@import 'Variables.scss';
+@import 'Mixins.scss';
+@import 'cmps/Chip.scss';
+@import 'cmps/Player.scss';
+@import 'cmps/Modal.scss';
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+  text-rendering: optimizelegibility;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  color: #fff;
+  font-family: sans-serif;
+  position: relative;
+  background-image: url('../images/texture.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  #root {
+    height: 100%;
+  }
+}
+
+button {
+  font-family: sans-serif;
+  all: unset;
+  padding: 20px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  box-shadow: 0 1px 5px #000000;
+  cursor: pointer;
+  background: #35c047;
+  font-size: clamp(1rem, 4vw, 2.5rem);
+  font-weight: bold;
+
+  &.deal,
+  &.stand {
+    background: #0085aa;
+  }
+
+  &:hover {
+    filter: brightness(85%);
+  }
+}
+
+.hide {
+  display: none;
+}

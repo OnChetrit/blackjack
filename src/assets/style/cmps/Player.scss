@@ -1,0 +1,45 @@
+.player {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  flex: 1;
+
+  .space {
+    flex: 1;
+  }
+
+  .cards {
+    display: flex;
+    .card {
+      height: 150px;
+      @include for-normal-layout {
+        height: 314px;
+      }
+      &:nth-child(n + 2) {
+        @include for-normal-layout {
+          margin-left: -170px;
+        }
+        margin-left: -80px;
+        transform: rotate(2deg);
+      }
+    }
+  }
+
+  .info {
+    font-size: clamp(1.5rem, 4vw, 4.5rem);
+    display: grid;
+    place-items: center;
+    flex: 1;
+
+    .sum {
+      display: grid;
+      place-items: center;
+      padding: 15px;
+      border-radius: 50%;
+      background-color: rgba(0, 0, 0, 0.363);
+      aspect-ratio: 1 / 1;
+    }
+  }
+}
