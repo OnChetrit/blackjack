@@ -1,2 +1,2 @@
 Blackjack game REACT
-By moshe dabush
+By On Chetrit
